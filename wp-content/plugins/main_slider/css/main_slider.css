@@ -1,0 +1,32 @@
+.tm-smoothscroll-bar {
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        right: 20px;
+        bottom: 0;
+        width: 18px;
+
+}
+
+.tm-smoothscroll-bar>ul {
+position: absolute;
+top: 50%;
+padding: 0;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+.tm-smoothscroll-bar>ul>li{
+        list-style-type: none;
+}
+
+.tm-smoothscroll-bar>ul>li>a{
+display: inline-block;
+color: #5B7FA6;
+}
+
+.tm-smoothscroll-bar>ul>li>a:hover {
+color: #6B8CAF;
+
+}
