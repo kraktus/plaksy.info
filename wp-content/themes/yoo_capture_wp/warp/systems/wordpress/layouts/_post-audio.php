@@ -6,7 +6,8 @@
         <p style="text-align:center; width: 200px;"><strong><?php the_title(); ?></strong></p>
         <p style="text-align:center; width: 200px;"><strong>Live'14</strong></p>
 
-        </a><p style="text-align:center; width: 200px;"><?php edit_post_link(__('Edit this post.', 'warp'), '<p><i class="uk-icon-pencil"></i> ','</p>'); ?></p>
+        </a><p style="text-align:center; width: 200px;">
+        <?php edit_post_link(__('Edit this post.', 'warp'), '<p><i class="uk-icon-pencil"></i> ','</p>'); ?></p>
 
     </div>
 

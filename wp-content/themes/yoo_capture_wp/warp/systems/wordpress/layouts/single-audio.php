@@ -13,18 +13,19 @@
 
         <h1 class="uk-article-title"><?php the_title(); ?></h1>
         <br>
+        <br>
 
         <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
     <tbody>
         <tr>
-            <td>
+            <td style="vertical-align:top">
                         <img src="/wp-content/uploads/albums/playboy.jpg" width="350px" alt="DVD Case" />
 
             </td>
             <td >
                 <h3 class="uk-panel-title">Участники записи:</h3>
-                <br>
-                <ul class="uk-list uk-list-line">
+
+                <ul class="uk-list uk-list-striped">
                     <li>Якухин Пашандра - Вокал/Гитары</li>
                     <li>Данилов Максим - Вокал/Клавиши</li>
                     <li>Лейкин Че - Бас</li>
@@ -38,42 +39,67 @@
         </tr>
     </tbody>
 </table>
+<br>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+    <tbody>
+        <tr>
+            <td style="vertical-align:top">
 
+                Год выпуска: 2013
+                <br>
+                Тип издания: Radio Edit
+                <br>
+                Записанно на студии <a href="#" target="_blank">HerSound</a>
+                <br>
+                <br>
 
-<br>
-<br>
-Год выпуска: 2013
-<br>
-Тип издания: Radio Edit
-<br>
-Записанно на студии <a>HerSound</a>
-<br>
-<br>
-<table class="uk-table uk-table-striped uk-table-condensed uk-table-hover">
-                    <!-- <caption>Список песен:</caption> -->
-                   <!--  <thead>
-                        <tr>
-                            <th>Table</th>
-                            <th>Heading</th>
-                        </tr>
-                    </thead> -->
+            </td>
+            <td style="text-align:right;">
 
+                <a class="uk-button vk" href="http://www.getuikit.com" target="_blank">Рассказать друзьям</a>
+                <button class="uk-button uk-button-primary" data-uk-modal="{target:'#modal-1'}">Скачать альбом</button>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div id="modal-1" class="uk-modal" style="display: none;">
+                    <div class="uk-modal-dialog" style="margin-left: -300px;">
+                        <button type="button" class="uk-modal-close uk-close"></button>
+                        <h1>Скачивание</h1>
+                        <p>
+                            В архиве находятся все песни альбома с полностью прописанными тэгами.
+                            <br>
+                            <br>
+                            Зарабатывать не умеем, если не жалко, подайте на следующую запись!
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+<table class="uk-table  uk-table-condensed uk-table-hover">
                     <tbody style="color:#7C2322">
                         <tr >
-                            <td width="100%"><strong>Страшненькая</strong></td>
-                            <td style="float:right;"><audio src="/audio.mp3" type="audio/mp3"></audio></td>
-                        </tr>
-                        <tr>
-                            <td width="100%"><strong>Я все видел</strong></td>
-                            <td style="float:right;"><audio src="/audio.mp3" type="audio/mp3"></audio></td>
-                        </tr>
-                        <tr>
-                            <td width="100%"><strong>Я все видел</strong></td>
-                            <td style="float:right;"><audio src="/audio.mp3" type="audio/mp3"></audio></td>
-                        </tr>
-                        <tr>
-                            <td width="100%"><strong>Я все видел</strong></td>
-                            <td style="float:right;"><audio src="/audio.mp3" type="audio/mp3"></audio></td>
+                            <td width="100%"><p style="color: #7d2422;">
+                            <i class="uk-icon-music"></i>&nbsp;<span class="uk-badge">Плаксы - Я все видел</span></p></td>
+                            <td style="float:right;"><audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio></td>
+
+                        </tr>                        <tr >
+                            <td width="100%"><p style="color: #7d2422;">
+                            <i class="uk-icon-music"></i>&nbsp;<span class="uk-badge">Плаксы - Я все видел</span></p></td>
+                            <td style="float:right;"><audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio></td>
+                        </tr>                        <tr >
+                            <td width="100%"><p style="color: #7d2422;">
+                            <i class="uk-icon-music"></i>&nbsp;<span class="uk-badge">Плаксы - Я все видел</span></p></td>
+                            <td style="float:right;"><audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio></td>
+                        </tr>                        <tr >
+                            <td width="100%"><p style="color: #7d2422;">
+                            <i class="uk-icon-music"></i>&nbsp;<span class="uk-badge">Плаксы - Я все видел</span></p></td>
+                            <td style="float:right;"><audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio></td>
+                        </tr>                        <tr >
+                            <td width="100%"><p style="color: #7d2422;">
+                            <i class="uk-icon-music"></i>&nbsp;<span class="uk-badge">Плаксы - Я все видел</span></p></td>
+                            <td style="float:right;"><audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio></td>
                         </tr>
                     </tbody>
                 </table>
@@ -90,7 +116,7 @@
         <p class="uk-article-meta">
             <?php
                 $date = '<time datetime="'.get_the_date('Y-m-d').'" pubdate>'.get_the_date().'</time>';
-                printf(__('Written by %s on %s. Posted in %s', 'warp'), '<a href="'.get_author_posts_url(get_the_author_meta('ID')).'" title="'.get_the_author().'">'.get_the_author().'</a>', $date, get_the_category_list(', '));
+                // printf(__('Written by %s on %s. Posted in %s', 'warp'), '<a href="'.get_author_posts_url(get_the_author_meta('ID')).'" title="'.get_the_author().'">'.get_the_author().'</a>', $date, get_the_category_list(', '));
             ?>
         </p>
 
