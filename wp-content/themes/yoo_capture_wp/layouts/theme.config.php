@@ -131,12 +131,16 @@ $config->set('body_config', json_encode($body_config));
 
 // add css
 $this['asset']->addFile('css', 'css:theme.css');
+$this['asset']->addFile('css', 'css:cloud-zoom.css');//cloud-zoom
+
 
 // add scripts
 $this['asset']->addFile('js', 'js:uikit.js');
 $this['asset']->addFile('js', 'js:social.js');
 $this['asset']->addFile('js', 'js:theme.js');
 $this['asset']->addFile('js', 'js:parallax.js');
+$this['asset']->addFile('js', 'js:cloud-zoom.1.0.2.js');//cloud-zoom
+$this['asset']->addFile('js', 'js:cloud-zoom.1.0.2.min.js');//cloud-zoom
 
 // internet explorer
 if ($this['useragent']->browser() == 'msie') {

@@ -1,4 +1,10 @@
+ <?
+    // load css
+    $this['asset']->addFile('css', 'css:cloud-zoom.css');
+ ?>
+
  <?php if (have_posts()) : ?>
+
     <?php while (have_posts()) : the_post(); ?>
 
     <article class="uk-article" data-permalink="<?php the_permalink(); ?>">
@@ -13,60 +19,53 @@
         <!-- <div class="nashe_radio_stamp"></div> -->
         <h1 class="uk-article-title"><?php the_title(); ?></h1>
         <br>
+        <br>
 
 
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
     <tbody>
         <tr>
-            <td style=" text-align: left; vertical-align: top;">
+            <td rowspan="2" style=" text-align: left; vertical-align: top;">
+                <div class="uk-thumbnail uk-overlay-toggle" href="&lt;?php the_permalink() ?&gt;" style="padding: 0px;">
 
-                <div class="uk-thumbnail uk-overlay-toggle" style="padding: 0px;" href="<?php the_permalink() ?>">
-                    <div style="border: 3px solid #7d2422;">
-                        <img src="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" style="max-width:357px;" alt="Load Style" >
 
-                    </div>
+                   <!--  <div style="border: 3px solid #7d2422;">
+                    <img alt="Афиша" src="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" style="max-width:357px;">
+                    </div> -->
+
+                <div id="wrap" style="top:0px;z-index:9999;position:relative;">
+                    <a href="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" class="cloud-zoom" rel="position: 'inside' , showTitle: false, adjustX:-4, adjustY:-4" style="position: relative; display: block;">
+                        <img src="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" title="Текст заголовка" alt="" style="display: block; max-width:357px; border:3px solid #7d2422">
+                    </a>
+<!--                 <div class="mousetrap" style="background-image: url(http://ruseller.com/adds/adds2572/example/); z-index: 999; position: absolute; width: 240px; height: 320px; left: 0px; top: 0px; cursor: move;"></div></div>
+ -->
+
+
                 </div>
-
             </td>
-            <td style="text-align: right; vertical-align: top;">
-
-              <!--   <section class="tm-main-top uk-grid" data-uk-grid-match="{target:'&gt; div &gt; .uk-panel'}" data-uk-grid-margin="">
-                  <div class="uk-width-1-1 uk-width-medium-1-2">
-                      <div class="uk-panel uk-panel-box widget_text" style="min-height: 161px;">
-                          <div class="uk-panel-badge uk-badge uk-badge-success">HOT</div>
-                          <h3 class="uk-panel-title"><i class="uk-icon-calendar"></i>&nbsp;&nbsp;&nbsp;Когда?</h3>
-                          <hr>
-                          <strong>
-                          29 ИЮНЯ 2013
-                          <br>
-                          Начало в 18:00
-                          </strong>
-                      </div>
-                  </div>
-              </section> -->
-
-
-                Клубный фестиваль при поддержке программы "Живые".<br>
-                <br>
-                Наше Радио:<br>
-                http://vk.com/semenchayka <br>
-                <br>
-                Участники: <br>
-                #Плаксы, <br>
-                ZNAKI, <br>
-                Дайте Два, <br>
-                СASUAL, <br>
-                GRANI, <br>
-                Небо №7.....<br>
-                <br>
-                <br>
-                Ба-а-а-альшой зал! <br>
-                Поехали!
-
+            <td rowspan="2" style="text-align: left; vertical-align: top; width: 260px;">&nbsp;</td>
+            <td colspan="2" style="text-align: left; vertical-align: top; width: 300px;">
+                Открытие фестивального сезона 2014!<br><br>
+                Незабываемый полет на Рок-фестивале "ПОЕХАЛИ!"<br><br>
+                Старт в 18:00 12 апреля 2014 года с космодрома большого зала клуба Glastonberry Pub.<br><br>
+                Экипаж: Плаксы, ZNAKI, Дайте Два, СASUAL, GRANI, Небо №7<br><br>
+                Путешествие к звездам и космическое настроение гарантировано!<br><br>
+                <hr style="vertical-align: bottom;">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left; vertical-align: bottom; width: 300px; height: 150px;">
+                <img src="http://plaksy.local/wp-content/uploads/nradio_recommend.png" style="width:100px;" alt="Load Style" >
+            </td>
+            <td style="text-align: right; vertical-align: bottom; width: 300px;">
+                <img src="http://www.barcode1.in/wp-content/uploads/QRcodeINDIA.gif" style="width:100px;" alt="Load Style" >
             </td>
         </tr>
     </tbody>
 </table>
+
+
+<br>
 <br>
 
 
