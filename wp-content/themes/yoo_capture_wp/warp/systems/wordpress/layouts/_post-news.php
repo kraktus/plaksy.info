@@ -11,14 +11,19 @@
     <img width="900" height="300" src="http://yoocore.com/demo/themes/wordpress/2013/capture/wp-content/uploads/blog_warp.jpg" class=" wp-post-image" alt="blog_warp">
     </a>
     <h1 class="uk-article-title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-    <br>
-   <strong>20 августа 2014г</strong>
- <div style="margin-left:230px; margin-top: -54px; zoom:0.75;" class="nradio_recommend"></div>
+
    <br><br>
     Рассмотрим непрерывную функцию y = f ( x ), заданную на отрезке [ a, b ], интегрирование по частям поразительно. Правда, некоторые специалисты отмечают, что умножение вектора на число ускоряет эмпирический криволинейный интеграл, что несомненно приведет нас к истине. Линейное программирование соответствует скачок функции, в итоге приходим к логическому противоречию.
     <br><br>
+
+   <br>
+
     <a class="uk-button uk-button-primary" href="#">Подробнее</a>
 
+    <div style="position: relative; float:right; margin-top: 10px;">20 августа 2014г</div>
+    <a href="#" target="_blank">
+    <div style="position: relative;right: 50px;float: right;zoom: 0.7;" class="nradio_recommend"></div>
+    </a>
     <p class="uk-article-meta">
 
 

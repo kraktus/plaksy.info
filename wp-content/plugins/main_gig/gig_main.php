@@ -57,8 +57,13 @@ function gig_main_widget($args) {
         <tr>
             <td><a class="uk-button uk-button-primary " href="#">Подробнее</a>
             <div class="none-large"><br></div>
-             <a class="uk-button vk" href="#" target="_blank">Встреча в контакте</a> </td>
+             <a class="uk-button vk" href="#" target="_blank">Встреча в контакте</a>
+
+            </td>
             <td style="text-align: right;">
+                <a href="#" target="_blank">
+                <div style="position: relative;float: right;zoom: 0.8;" class="nradio_recommend"></div>
+                </a>
             </td>
         </tr>
     </tbody>
