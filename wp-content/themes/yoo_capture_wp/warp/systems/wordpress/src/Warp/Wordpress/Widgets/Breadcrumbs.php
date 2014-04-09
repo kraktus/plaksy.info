@@ -53,6 +53,16 @@ class Warp_Breadcrumbs extends \WP_Widget
                     }
                 }
             }
+
+            //Раздел поиск
+            if (strstr($_SERVER['REQUEST_URI'],'search')) {
+
+                $output .='<li class="uk-active">';
+                $output .= '<span>Поиск по запросу</span>';
+                $output .='</li>';
+            }
+
+
             //Раздел афиша
             if ($_SERVER['REQUEST_URI'] == '/concert/') {
 
@@ -101,14 +111,6 @@ class Warp_Breadcrumbs extends \WP_Widget
                 return 0;
             }
 
-            //Раздел поиск
-            if ($_SERVER['REQUEST_URI'] == '/search/') {
-
-                $output .='<li class="uk-active">';
-                $output .= '<span>Поиск по запросу</span>';
-                $output .='</li>';
-                $output .='</ul>';
-            }
 
             //Раздел афиша - персональная страница афиши.
             if (strstr($_SERVER['REQUEST_URI'],'concert'))
