@@ -3,8 +3,8 @@
  <div class="uk-width-1-1 uk-width-medium-1-2">
         <a href="<?php the_permalink() ?>"><img src="/wp-content/uploads/albums/playboy.jpg" width="200px" alt="DVD Case" /><img src="/wp-content/uploads/albums/dvd-playboy.png" width="200px;" alt="DVD Disc" /></a>
         <a href="<?php the_permalink() ?>">
-        <p style="text-align:center; width: 200px;"><strong><?php the_title(); ?></strong></p>
-        <p style="text-align:center; width: 200px;"><strong>Live'14</strong></p>
+        <p style="text-align:center; width: 200px;"><strong style="color: #7C2322"><?php the_title(); ?></strong></p>
+        <p style="text-align:center; width: 200px;"><strong style="color: #7C2322">Live'14</strong></p>
 
         </a><p style="text-align:center; width: 200px;">
         <?php edit_post_link(__('Edit this post.', 'warp'), '<p><i class="uk-icon-pencil"></i> ','</p>'); ?></p>
