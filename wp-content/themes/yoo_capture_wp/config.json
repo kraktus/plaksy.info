@@ -1106,7 +1106,47 @@
 				"small": "1"
 			}
 		},
+		"single_video": {
+			"title": "0",
+			"assignment": {
+				"0": "",
+				"1": "archive",
+				"2": "single"
+			},
+			"class": "",
+			"panel": "",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
+		},
 		"single_social_group": {
+			"title": "0",
+			"assignment": {
+				"0": "",
+				"1": "archive",
+				"2": "single"
+			},
+			"class": "",
+			"panel": "",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
+		},
+		"single_radio": {
 			"title": "0",
 			"assignment": {
 				"0": "",
@@ -1472,12 +1512,6 @@
 				"large": "1",
 				"medium": "1",
 				"small": "1"
-			}
-		},
-		"footer_copyright": {
-			"assignment": {
-				"0": "",
-				"1": "*"
 			}
 		},
 		"nav_menu-7": {
