@@ -313,12 +313,6 @@
 				"1": "*"
 			}
 		},
-		"social_icons": {
-			"assignment": {
-				"0": "",
-				"1": "*"
-			}
-		},
 		"nav_menu-3": {
 			"title": "1",
 			"assignment": {
@@ -707,7 +701,7 @@
 		"text-69": {
 			"assignment": {
 				"0": "",
-				"1": "*"
+				"1": "front_page"
 			}
 		},
 		"text-13": {
@@ -961,7 +955,10 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "*"
+				"1": "front_page",
+				"2": "page-798",
+				"3": "page-802",
+				"4": "page-796"
 			},
 			"class": "uk-text-center",
 			"panel": "uk-panel",
@@ -1095,6 +1092,46 @@
 			"assignment": {
 				"0": "",
 				"1": "cat-8"
+			},
+			"class": "",
+			"panel": "",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
+		},
+		"single_social_group": {
+			"title": "0",
+			"assignment": {
+				"0": "",
+				"1": "archive",
+				"2": "single"
+			},
+			"class": "",
+			"panel": "",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
+		},
+		"single_album": {
+			"title": "0",
+			"assignment": {
+				"0": "",
+				"1": "archive",
+				"2": "single"
 			},
 			"class": "",
 			"panel": "",
@@ -1281,7 +1318,9 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "cat-8"
+				"1": "archive",
+				"2": "single",
+				"3": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -1300,7 +1339,9 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "cat-8"
+				"1": "archive",
+				"2": "single",
+				"3": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -1319,7 +1360,9 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "cat-8"
+				"1": "archive",
+				"2": "single",
+				"3": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -1338,7 +1381,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "cat-8"
+				"1": "archive"
 			},
 			"class": "",
 			"panel": "",
@@ -1357,7 +1400,9 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "cat-8"
+				"1": "archive",
+				"2": "single",
+				"3": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-primary",
