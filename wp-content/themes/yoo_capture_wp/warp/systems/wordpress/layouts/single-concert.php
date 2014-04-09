@@ -55,7 +55,9 @@
         </tr>
         <tr>
             <td style="text-align: left; vertical-align: bottom; width: 300px; height: 150px;">
+                <a href="#" target="_blank">
                 <img src="http://plaksy.local/wp-content/uploads/nradio_recommend.png" style="width:100px;" alt="Load Style" >
+                </a>
             </td>
             <td style="text-align: right; vertical-align: bottom; width: 300px;">
                 <img src="http://www.barcode1.in/wp-content/uploads/QRcodeINDIA.gif" style="width:100px;" alt="Load Style" >
@@ -131,12 +133,12 @@
 
 
 
-        <p class="uk-article-meta">
-            <?php
-                $date = '<time datetime="'.get_the_date('Y-m-d').'" pubdate>'.get_the_date().'</time>';
-                printf(__('Written by %s on %s. Posted in %s', 'warp'), '<a href="'.get_author_posts_url(get_the_author_meta('ID')).'" title="'.get_the_author().'">'.get_the_author().'</a>', $date, get_the_category_list(', '));
-            ?>
-        </p>
+<!--        <p class="uk-article-meta">-->
+<!--            --><?php
+//                $date = '<time datetime="'.get_the_date('Y-m-d').'" pubdate>'.get_the_date().'</time>';
+//                printf(__('Written by %s on %s. Posted in %s', 'warp'), '<a href="'.get_author_posts_url(get_the_author_meta('ID')).'" title="'.get_the_author().'">'.get_the_author().'</a>', $date, get_the_category_list(', '));
+//            ?>
+<!--        </p>-->
 
         <?php the_content(''); ?>
 

@@ -15,54 +15,51 @@
         <br>
         <br>
 
-        <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
-    <tbody>
-        <tr>
-            <td style="vertical-align:top">
-                        <img src="/wp-content/uploads/albums/playboy.jpg" width="350px" alt="DVD Case" />
-
-            </td>
-            <td >
-                <h3 class="uk-panel-title">Участники записи:</h3>
-
-                <ul class="uk-list uk-list-striped">
-                    <li>Якухин Пашандра - Вокал/Гитары</li>
-                    <li>Данилов Максим - Вокал/Клавиши</li>
-                    <li>Лейкин Че - Бас</li>
-                    <li>Чаленков Димон - Барабансы</li>
-                    <li>Жамалетдинов Руслан - Гитара</li>
-                    <li>Ратников Юра - Трубадур</li>
-                    <li>Какой-то Вадим - Тромбон</li>
-                    <li>Василек Никита - Саксафон</li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<br>
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
-    <tbody>
-        <tr>
-            <td style="vertical-align:top">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top; width:350px" ><img alt="DVD Case" src="/wp-content/uploads/albums/playboy.jpg" ><br>
+				<br>
+				&nbsp;</td>
+			<td style="vertical-align:top; width: 10%;">&nbsp;</td>
+			<td rowspan="2" style="background: #f7f7f7;padding: 35px; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);">
+				<h3 class="uk-panel-title">Участники записи:</h3>
+				<dl class="uk-description-list uk-description-list-line">
+					<dt>Якухин Пашандра</dt>
+					<dd>Вокал/Гитары</dd>
+					<dt>Данилов Максим</dt>
+					<dd>Вокал/Клавиши</dd>
+					<dt>Якухин Пашандра</dt>
+					<dd>Вокал/Гитары</dd>
+					<dt>Данилов Максим</dt>
+					<dd>Вокал/Клавиши</dd>
+					<dt>Якухин Пашандра</dt>
+					<dd>Вокал/Гитары</dd>
+					<dt>Данилов Максим</dt>
+					<dd>Вокал/Клавиши</dd>
+					<dt>Якухин Пашандра</dt>
+					<dd>Вокал/Гитары</dd>
+					<dt>Данилов Максим</dt>
+					<dd>Вокал/Клавиши</dd>
+				</dl>
+			</td>
+		</tr>
+		<tr>
+			<td style="vertical-align: bottom; text-align: left;">
 
-                Год выпуска: 2013
-                <br>
-                Тип издания: Radio Edit
-                <br>
-                Записанно на студии <a href="#" target="_blank">HerSound</a>
-                <br>
-                <br>
+				Год выпуска: 2013<br>
+				Тип издания: Radio Edit<br>
+				Записанно на студии&nbsp;<a href="#" target="_blank">HerSound</a>
+                <hr>
 
-            </td>
-            <td style="text-align:right;">
-
-                <a class="uk-button vk" href="http://www.getuikit.com" target="_blank">Рассказать друзьям</a>
                 <button class="uk-button uk-button-primary" data-uk-modal="{target:'#modal-1'}">Скачать альбом</button>
-
             </td>
-        </tr>
-    </tbody>
+		</tr>
+	</tbody>
 </table>
+
+<br>
+
 <div id="modal-1" class="uk-modal" style="display: none;">
                     <div class="uk-modal-dialog" style="margin-left: -300px;">
                         <button type="button" class="uk-modal-close uk-close"></button>
@@ -77,39 +74,57 @@
                 </div>
                 <br>
                 <hr>
-<table class="uk-table  uk-table-condensed uk-table-hover">
-                    <tbody style="color:#7C2322">
-                        <tr >
-                            <td width="100%"><p style="color: #7d2422;">
-                            <i class="uk-icon-music"></i>&nbsp;<span class="uk-badge">Плаксы - Я все видел</span></p></td>
-                            <td style="float:right;"><audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio></td>
 
-                        </tr>                        <tr >
-                            <td width="100%"><p style="color: #7d2422;">
-                            <i class="uk-icon-music"></i>&nbsp;<span class="uk-badge">Плаксы - Я все видел</span></p></td>
-                            <td style="float:right;"><audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio></td>
-                        </tr>                        <tr >
-                            <td width="100%"><p style="color: #7d2422;">
-                            <i class="uk-icon-music"></i>&nbsp;<span class="uk-badge">Плаксы - Я все видел</span></p></td>
-                            <td style="float:right;"><audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio></td>
-                        </tr>                        <tr >
-                            <td width="100%"><p style="color: #7d2422;">
-                            <i class="uk-icon-music"></i>&nbsp;<span class="uk-badge">Плаксы - Я все видел</span></p></td>
-                            <td style="float:right;"><audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio></td>
-                        </tr>                        <tr >
-                            <td width="100%"><p style="color: #7d2422;">
-                            <i class="uk-icon-music"></i>&nbsp;<span class="uk-badge">Плаксы - Я все видел</span></p></td>
-                            <td style="float:right;"><audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio></td>
-                        </tr>
-                    </tbody>
-                </table>
+    <table border="0" cellpadding="1" cellspacing="1" style="width: 100%; color: #7C2322">
+	<tbody>
+		<tr>
+			<td style="width: 100%">
+                <strong>Плаксы - Я все видел</strong>
+            </td>
+			<td></td>
+			<td style="text-align: right;">
+                <audio  src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 100%">
+                <strong>Плаксы - Я все видел</strong>
+            </td>
+			<td></td>
+			<td style="text-align: right;">
+                <audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio>
+			</td>
+		</tr>
+    <tr>
+			<td style="width: 100%">
+                <strong>Плаксы - Я все видел</strong>
+            </td>
+			<td></td>
+			<td style="text-align: right;">
+                <audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio>
+			</td>
+		</tr>
+    <tr>
+			<td style="width: 100%">
+                <strong>Плаксы - Я все видел</strong>
+            </td>
+			<td></td>
+			<td style="text-align: right;">
+                <audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio>
+			</td>
+		</tr>
+    <tr>
+			<td style="width: 100%">
+                <strong>Плаксы - Я все видел</strong>
+            </td>
+			<td></td>
+			<td style="text-align: right;">
+                <audio src="/wp-content/uploads/test.mp3" type="audio/mp3"></audio>
+			</td>
+		</tr>
 
-
-
-
-
-
-
+    </tbody>
+</table>
 
 
 

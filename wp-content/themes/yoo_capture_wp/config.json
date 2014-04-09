@@ -316,8 +316,7 @@
 		"nav_menu-3": {
 			"title": "1",
 			"assignment": {
-				"0": "",
-				"1": "page-39"
+				"0": ""
 			}
 		},
 		"warp_breadcrumbs-4": {
@@ -380,7 +379,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "home"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel",
@@ -399,7 +398,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "home"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel",
@@ -418,7 +417,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -437,7 +436,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -456,7 +455,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -475,7 +474,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -494,7 +493,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "page-37"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -513,7 +512,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "page-37"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -532,7 +531,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "page-37"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -551,7 +550,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "page-37"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -570,7 +569,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "page-35"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -608,7 +607,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "home"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel",
@@ -627,7 +626,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -646,7 +645,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -665,7 +664,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -684,7 +683,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -702,14 +701,14 @@
 		"text-69": {
 			"assignment": {
 				"0": "",
-				"1": "*"
+				"1": "front_page"
 			}
 		},
 		"text-13": {
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-primary",
@@ -728,7 +727,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-primary",
@@ -747,7 +746,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-primary",
@@ -766,7 +765,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-primary",
@@ -785,7 +784,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "page-37"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -804,7 +803,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "page-37"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -823,7 +822,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "page-37"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -842,7 +841,7 @@
 			"title": "0",
 			"assignment": {
 				"0": "",
-				"1": "page-37"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -861,7 +860,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-94"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -880,7 +879,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -899,7 +898,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -918,7 +917,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -937,7 +936,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -956,7 +955,10 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "*"
+				"1": "front_page",
+				"2": "page-798",
+				"3": "page-802",
+				"4": "page-796"
 			},
 			"class": "uk-text-center",
 			"panel": "uk-panel",
@@ -1013,7 +1015,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -1032,7 +1034,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -1051,7 +1053,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -1070,7 +1072,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -1089,7 +1091,87 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-94"
+				"1": "cat-8"
+			},
+			"class": "",
+			"panel": "",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
+		},
+		"single_video": {
+			"title": "0",
+			"assignment": {
+				"0": "",
+				"1": "archive",
+				"2": "single"
+			},
+			"class": "",
+			"panel": "",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
+		},
+		"single_social_group": {
+			"title": "0",
+			"assignment": {
+				"0": "",
+				"1": "archive",
+				"2": "single"
+			},
+			"class": "",
+			"panel": "",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
+		},
+		"single_radio": {
+			"title": "0",
+			"assignment": {
+				"0": "",
+				"1": "archive",
+				"2": "single"
+			},
+			"class": "",
+			"panel": "",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
+		},
+		"single_album": {
+			"title": "0",
+			"assignment": {
+				"0": "",
+				"1": "archive",
+				"2": "single"
 			},
 			"class": "",
 			"panel": "",
@@ -1108,7 +1190,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -1126,8 +1208,7 @@
 		"text-26": {
 			"title": "1",
 			"assignment": {
-				"0": "",
-				"1": "page-39"
+				"0": ""
 			},
 			"class": "",
 			"panel": "",
@@ -1146,7 +1227,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -1164,8 +1245,7 @@
 		"text-35": {
 			"title": "1",
 			"assignment": {
-				"0": "",
-				"1": "page-33"
+				"0": ""
 			},
 			"class": "uk-text-center ",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -1184,7 +1264,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-33"
+				"1": "cat-8"
 			},
 			"class": "uk-text-center ",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -1203,7 +1283,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-33"
+				"1": "cat-8"
 			},
 			"class": "uk-text-center ",
 			"panel": "",
@@ -1222,15 +1302,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-110",
-				"2": "page-112",
-				"3": "page-90",
-				"4": "page-115",
-				"5": "page-117",
-				"6": "page-120",
-				"7": "page-88",
-				"8": "page-92",
-				"9": "page-86"
+				"1": "cat-8"
 			},
 			"class": "uk-text-center ",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -1248,16 +1320,7 @@
 		"nav_menu-6": {
 			"title": "1",
 			"assignment": {
-				"0": "",
-				"1": "page-110",
-				"2": "page-112",
-				"3": "page-90",
-				"4": "page-115",
-				"5": "page-117",
-				"6": "page-120",
-				"7": "page-88",
-				"8": "page-92",
-				"9": "page-86"
+				"0": ""
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-primary",
@@ -1276,7 +1339,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-94"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -1295,10 +1358,9 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "home",
-				"2": "archive",
-				"3": "search",
-				"4": "single"
+				"1": "archive",
+				"2": "single",
+				"3": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
@@ -1317,10 +1379,9 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "home",
-				"2": "archive",
-				"3": "search",
-				"4": "single"
+				"1": "archive",
+				"2": "single",
+				"3": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -1339,10 +1400,9 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "home",
-				"2": "archive",
-				"3": "search",
-				"4": "single"
+				"1": "archive",
+				"2": "single",
+				"3": "cat-8"
 			},
 			"class": "",
 			"panel": "",
@@ -1361,10 +1421,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "home",
-				"2": "archive",
-				"3": "search",
-				"4": "single"
+				"1": "archive"
 			},
 			"class": "",
 			"panel": "",
@@ -1383,10 +1440,9 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "home",
-				"2": "archive",
-				"3": "search",
-				"4": "single"
+				"1": "archive",
+				"2": "single",
+				"3": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-box uk-panel-box-primary",
@@ -1405,7 +1461,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-header",
@@ -1424,7 +1480,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-header",
@@ -1443,7 +1499,7 @@
 			"title": "1",
 			"assignment": {
 				"0": "",
-				"1": "page-39"
+				"1": "cat-8"
 			},
 			"class": "",
 			"panel": "uk-panel uk-panel-header",
@@ -1456,12 +1512,6 @@
 				"large": "1",
 				"medium": "1",
 				"small": "1"
-			}
-		},
-		"footer_copyright": {
-			"assignment": {
-				"0": "",
-				"1": "*"
 			}
 		},
 		"nav_menu-7": {
@@ -1755,25 +1805,25 @@
 			"icon": "",
 			"subtitle": ""
 		},
-		"734": {
+		"804": {
 			"columns": "1",
 			"columnwidth": "",
 			"icon": "",
 			"subtitle": ""
 		},
-		"735": {
+		"805": {
 			"columns": "1",
 			"columnwidth": "",
 			"icon": "",
 			"subtitle": ""
 		},
-		"736": {
+		"806": {
 			"columns": "1",
 			"columnwidth": "",
 			"icon": "",
 			"subtitle": ""
 		},
-		"737": {
+		"807": {
 			"columns": "1",
 			"columnwidth": "",
 			"icon": "",

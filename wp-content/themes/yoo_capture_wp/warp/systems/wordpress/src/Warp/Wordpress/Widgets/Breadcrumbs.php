@@ -37,7 +37,7 @@ class Warp_Breadcrumbs extends \WP_Widget
 
             $output = '<ul class="uk-breadcrumb">';
 
-            $output .= '<li><a href="'.get_option('home').'">'.$home_title.'</a></li>';
+            $output .= '<li><a href="'.get_option('home').'">'.Главная.'</a></li>';
 
             if (is_single()) {
                 $cats = get_the_category();
@@ -53,6 +53,81 @@ class Warp_Breadcrumbs extends \WP_Widget
                     }
                 }
             }
+
+            //Раздел поиск
+            if (strstr($_SERVER['REQUEST_URI'],'search')) {
+
+                $output .='<li class="uk-active">';
+                $output .= '<span>Поиск по запросу</span>';
+                $output .='</li>';
+            }
+
+
+            //Раздел афиша
+            if ($_SERVER['REQUEST_URI'] == '/concert/') {
+
+                $output .='<li class="uk-active">';
+                $output .= '<span>Афиша</span>';
+                $output .='</li>';
+                $output .='</ul>';
+                echo $output;
+                echo $after_widget;
+                return 0;
+            }
+
+            //Раздел новости
+            if ($_SERVER['REQUEST_URI'] == '/news/') {
+
+                $output .='<li class="uk-active">';
+                $output .= '<span>Новости</span>';
+                $output .='</li>';
+                $output .='</ul>';
+                echo $output;
+                echo $after_widget;
+                return 0;
+            }
+
+            //Раздел релизы
+            if ($_SERVER['REQUEST_URI'] == '/audio/') {
+
+                $output .='<li class="uk-active">';
+                $output .= '<span>Релизы</span>';
+                $output .='</li>';
+                $output .='</ul>';
+                echo $output;
+                echo $after_widget;
+                return 0;
+            }
+
+            //Раздел медиа
+            if ($_SERVER['REQUEST_URI'] == '/media/') {
+
+                $output .='<li class="uk-active">';
+                $output .= '<span>Медиа</span>';
+                $output .='</li>';
+                $output .='</ul>';
+                echo $output;
+                echo $after_widget;
+                return 0;
+            }
+
+
+            //Раздел афиша - персональная страница афиши.
+            if (strstr($_SERVER['REQUEST_URI'],'concert'))
+                $output .= '<li><a href="/concert/">Афиша</a></li>';
+
+            //Раздел новости - персональная страница новости.
+            if (strstr($_SERVER['REQUEST_URI'],'news'))
+                $output .= '<li><a href="/news/">Новости</a></li>';
+
+            //Раздел аудио - персональная страница аудио.
+            if (strstr($_SERVER['REQUEST_URI'],'audio'))
+                $output .= '<li><a href="/audio/">Релизы</a></li>';
+
+            //Раздел медиа - персональная страница медиа.
+            if (strstr($_SERVER['REQUEST_URI'],'media'))
+                $output .= '<li><a href="/media/">Медиа</a></li>';
+
 
             if (is_category()) {
 

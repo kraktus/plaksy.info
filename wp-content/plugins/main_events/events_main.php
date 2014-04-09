@@ -54,7 +54,11 @@ function events_main_widget($args) {
             <td>
                 <a class="uk-button uk-button-primary" href="#">Подробнее</a>
             </td>
-            <td style="text-align: right;"><i class="uk-icon-info-sign"></i></td>
+            <td style="text-align: right;">
+                <a href="#" target="_blank">
+                <div style="position: relative;right: 0px;float: right;zoom: 0.7;" class="nradio_recommend"></div>
+                </a>
+            </td>
             <td style="text-align: right; width: 140px;">20 августа 2014г.</td>
         </tr>
     </tbody>
