@@ -16,7 +16,7 @@
         <h1 class="uk-h3"><?php _e('Blog Archives', 'warp'); ?></h1>
     <?php endif; ?>
 
-    <?php echo $this->render('_posts'); ?>
+    <?php echo $this->render('_posts-media'); ?>
 
     <?php echo $this->render("_pagination", array("type"=>"posts")); ?>
 

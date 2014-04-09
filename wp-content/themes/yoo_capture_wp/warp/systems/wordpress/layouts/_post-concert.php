@@ -10,27 +10,34 @@
 
     <!-- <h1 class="uk-article-title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1> -->
 
-
+<br>
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%; height: 200px;">
     <tbody>
         <tr>
             <td rowspan="3" style="vertical-align: top;">
                 <a class="uk-thumbnail uk-overlay-toggle" style="padding: 0px;" href="<?php the_permalink() ?>">
                     <div class="uk-overlay" style="border: 3px solid #7d2422;">
-                        <img src="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" style="max-height:420px;" alt="Load Style" >
+                        <img src="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" style="max-height:473px;" alt="Load Style" >
                         <div class="uk-overlay-area"></div>
                     </div>
                 </a>
             </td>
             <td rowspan="3">&nbsp;</td>
             <td style="text-align: left; vertical-align: top; width: 330px;">
-                <h2><div style="text-align: initial;
-                width: 100%;"><?php the_title();?></div></h2>
+                <h2>
+                <div style="text-align: initial;
+                width: 100%;"><?php the_title();?>
+                </div>
+                </h2>
                 <hr>
             </td>
         </tr>
         <tr>
             <td style="text-align: right; vertical-align: bottom;">
+                <div style="margin-left: 234px;" class="nradio_recommend"></div>
+                <br>
+                <br>
+                <br>
                 <h5 style="text-align: right;" class="uk-article-lead">01 Апреля 2014</h5>
                 <h5 style="text-align: right;" class="uk-article-lead">&nbsp; 20:00</h5>
                 <h5 style="text-align: right;" class="uk-article-lead">г. Москва</h5>
@@ -70,3 +77,4 @@
 
 </article>
 <hr>
+

@@ -36,7 +36,7 @@ while (have_posts()) {
         $columns[$column] = '';
     }
 
-    $columns[$column] .= $this->render('_post-audio');
+    $columns[$column] .= $this->render('_post-media');
     $i++;
 }
 

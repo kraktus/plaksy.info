@@ -1,29 +1,3 @@
-
-<!-- <section class="tm-main-top uk-grid" data-uk-grid-match="{target:'&gt; div &gt; .uk-panel'}" data-uk-grid-margin="">
-    <div class="uk-width-1-1 uk-width-medium-1-2">
-        <a href="#"><img src="/wp-content/uploads/albums/playboy.jpg" alt="DVD Case" /><img src="/wp-content/uploads/albums/dvd-playboy.png" alt="DVD Disc" /></a>
-        <p><strong>Живые Live</strong></p>
-        <p><strong>2014</strong></p>
-    </div>
-
-    <div class="uk-width-1-1 uk-width-medium-1-2">
-        <a href="#"><img src="/wp-content/uploads/albums/playboy.jpg" alt="DVD Case" /><img src="/wp-content/uploads/albums/dvd-playboy.png" alt="DVD Disc" /></a>
-        <p><strong>Живые Live</strong></p>
-        <p><strong>2014</strong></p>
-    </div>
-
-    <div class="uk-width-1-1 uk-width-medium-1-2">
-        <a href="#"><img src="/wp-content/uploads/albums/playboy.jpg" alt="DVD Case" /><img src="/wp-content/uploads/albums/dvd-playboy.png" alt="DVD Disc" /></a>
-        <p><strong>Живые Live</strong></p>
-        <p><strong>2014</strong></p>
-    </div>
-
-    <div class="uk-width-1-1 uk-width-medium-1-2">
-        <a href="#"><img src="/wp-content/uploads/albums/playboy.jpg" alt="DVD Case" /><img src="/wp-content/uploads/albums/dvd-playboy.png" alt="DVD Disc" /></a>
-        <p><strong>Живые Live</strong></p>
-        <p><strong>2014</strong></p>
-    </div>
-</section> -->
 <?php
 /**
 * @package   Warp Theme Framework
