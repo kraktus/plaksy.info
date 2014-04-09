@@ -34,7 +34,9 @@
         </tr>
         <tr>
             <td style="text-align: right; vertical-align: bottom;">
+                <a href="#" target="_blank">
                 <div style="margin-left: 234px;" class="nradio_recommend"></div>
+                </a>
                 <br>
                 <br>
                 <br>
@@ -57,12 +59,12 @@
 
 
 
-  <p class="uk-article-meta">
-        <?php
-            $date = '<time datetime="'.get_the_date('Y-m-d').'" pubdate>'.get_the_date().'</time>';
-            printf(__('Written by %s on %s. Posted in %s', 'warp'), '<a href="'.get_author_posts_url(get_the_author_meta('ID')).'" title="'.get_the_author().'">'.get_the_author().'</a>', $date, get_the_category_list(', '));
-        ?>
-    </p>
+<!--  <p class="uk-article-meta">-->
+<!--        --><?php
+//            $date = '<time datetime="'.get_the_date('Y-m-d').'" pubdate>'.get_the_date().'</time>';
+//            printf(__('Written by %s on %s. Posted in %s', 'warp'), '<a href="'.get_author_posts_url(get_the_author_meta('ID')).'" title="'.get_the_author().'">'.get_the_author().'</a>', $date, get_the_category_list(', '));
+//        ?>
+<!--    </p>-->
 
     <?php the_content(''); ?>
 
