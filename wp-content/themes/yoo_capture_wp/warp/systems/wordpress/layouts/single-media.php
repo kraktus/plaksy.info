@@ -276,8 +276,8 @@ Conversion rate синхронизирует потребительский ры
     </div>
 
 </div>
-
-
+<br>
+Благодарим за предоставленные материалы<br> <a href="#">http://www.ya.ru</a>
 <!--        <p class="uk-article-meta">-->
 <!--            --><?php
 //                $date = '<time datetime="'.get_the_date('Y-m-d').'" pubdate>'.get_the_date().'</time>';
