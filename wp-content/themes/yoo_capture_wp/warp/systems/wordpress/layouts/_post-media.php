@@ -44,7 +44,7 @@
 			<td style="text-align: right; vertical-align: bottom;">
                 <div style="zoom: 3; color: #7C2322">
                     <div class="uk-icon-camera" style="float: left;"></div>
-                    <div class="uk-icon-youtube-play" style="float: left; margin-left: 10px;"></div>
+                    <div class="uk-icon-play-circle" style="float: left; margin-left: 10px;"></div>
                 </div>
                     <a class="uk-button uk-button-primary " href="<?php the_permalink() ?>">Подробнее</a>
 			</td>
