@@ -1388,11 +1388,13 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   letter-spacing: -0.31em;
 }
 .uk-breadcrumb a {
+  color:#7C2322;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
 }
 .uk-breadcrumb a:hover {
-  -webkit-transform: scale(1.2);
+    color:#7C2322;
+    -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 .uk-breadcrumb > li {
