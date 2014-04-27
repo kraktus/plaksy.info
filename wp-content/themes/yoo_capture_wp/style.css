@@ -8,3 +8,7 @@ Version: 1.0.3
 Author: YOOtheme
 Author URI: http://www.yootheme.com
 */
+
+html{
+    min-width: 1005px!important;
+}
