@@ -23,17 +23,28 @@ function single_album_widget($args) {
 
    <h2>Альбом</h2>
    <hr>
-   <a class="uk-thumbnail uk-overlay-toggle" style="padding: 0px;" href="">
+<!--   <a class="uk-overlay-toggle" style="padding: 0px;" href="">
             <div class="uk-overlay" style="border: 3px solid #7d2422;">
-                <img src="/wp-content/uploads/music/album.jpg"  width="186" height="180" alt="Load Style" >
-                <!-- <div class="uk-overlay-area" style="background: #7d2422"></div> -->
+                <img class="uk-thumbnail-single" src="/wp-content/uploads/music/album.jpg"  width="186" height="180" alt="Load Style" >
                 <div class="uk-overlay-area"></div>
             </div>
             <div class="uk-thumbnail-caption" style="background: #7d2422; color:white;">Живые Live (2014)</div>
         </a>
+-->
+
+    <a class="uk-overlay-toggle" data-lightbox="group:photos; transitionIn:elastic; transitionOut:elastic; titlePosition:over;padding:0" href="#">
+                                <div style="border: 3px solid #7d2422;">
+                                    <div class="uk-overlay">
+                                        <img class="uk-thumbnail-single" src="/wp-content/uploads/music/album.jpg" alt="Load Style" title="Load Style" height="180" width="186" >
+                                        <div class="uk-overlay-area" ></div>
+                                    </div>
+                                    <div class="uk-thumbnail-caption" style="color:white;background: #7C2322 ">Живые Live (2014)</div>
+                                </div>
+    </a>
 
 
-<table border="0" cellpadding="1" cellspacing="1" style="width: 186px;">
+
+    <table border="0" cellpadding="1" cellspacing="1" style="width: 186px;">
   <tbody>
     <tr>
       <td>
