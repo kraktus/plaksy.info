@@ -56,7 +56,7 @@
         <tr>
             <td style="text-align: left; vertical-align: bottom; width: 300px; height: 150px;">
                 <a href="#" target="_blank">
-                <img src="http://plaksy.local/wp-content/uploads/nradio_recommend.png" style="width:100px;" alt="Load Style" >
+                <img src="/wp-content/uploads/nradio_recommend.png" style="width:100px;" alt="Load Style" >
                 </a>
             </td>
             <td style="text-align: right; vertical-align: bottom; width: 300px;">
