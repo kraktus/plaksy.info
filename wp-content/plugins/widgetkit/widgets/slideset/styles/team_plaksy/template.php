@@ -79,9 +79,22 @@ for ($i = 0; $i < $all_artist_number; $i++)
 
 
 <?
+
+function cut($a)
+{   // внимание, ГОВНОКОД!!!
+    //нужно для удаления начала линка картинки
+    //т.к. по умолчанию у них абсолютные пути
+    $url = preg_replace("!http://plaksy.local!","",$a);
+    return $url;
+}
+
+
 // echo "<pre>";
 // var_dump($artist);
 // echo "</pre>";
+
+
+
 
 ?>
 
@@ -98,7 +111,7 @@ for ($i = 0; $i < $all_artist_number; $i++)
 
                                         <li>
                                                 <article class="wk-content">
-                                                <img src="<?=(string)$artist[$i]['PHOTO'][0]?>" alt="<?=(string)$artist[$i]['NAME'][0]?>" height="200" width="200">
+                                                <img src="<?=cut($artist[$i]['PHOTO'][0]);?>" alt="<?=(string)$artist[$i]['NAME'][0]?>" height="200" width="200">
                                                 <div class="overlay team_plaksy">
                                                 <div>
                                                         <div class="uk-height-1-1 uk-vertical-align">
