@@ -5,12 +5,12 @@
         $width = get_option('thumbnail_size_w'); //get the width of the thumbnail setting
         $height = get_option('thumbnail_size_h'); //get the height of the thumbnail setting
         ?>
-        <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array($width, $height), array('class' => '')); ?></a>
+        <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array($width, $height), array('class' => '')); ?></a>
     <?php endif; ?>
-    <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
+    <a href="<?php the_permalink() ?>" >
     <img width="900" height="300" src="http://yoocore.com/demo/themes/wordpress/2013/capture/wp-content/uploads/blog_warp.jpg" class=" wp-post-image" alt="blog_warp">
     </a>
-    <h1 class="uk-article-title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+    <h1 class="uk-article-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
    <br><br>
     Рассмотрим непрерывную функцию y = f ( x ), заданную на отрезке [ a, b ], интегрирование по частям поразительно. Правда, некоторые специалисты отмечают, что умножение вектора на число ускоряет эмпирический криволинейный интеграл, что несомненно приведет нас к истине. Линейное программирование соответствует скачок функции, в итоге приходим к логическому противоречию.
@@ -18,7 +18,7 @@
 
    <br>
 
-    <a class="uk-button uk-button-primary" href="#">Подробнее</a>
+    <a class="uk-button uk-button-primary" href="<?php the_permalink() ?>">Подробнее</a>
 
     <div style="position: relative; float:right; margin-top: 10px;">20 августа 2014г</div>
     <a href="#" target="_blank">

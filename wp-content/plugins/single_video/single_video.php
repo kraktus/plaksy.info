@@ -18,13 +18,16 @@ function single_video_widget($args) {
    <hr>
 
 
-       <a class="uk-thumbnail uk-overlay-toggle" style="padding: 0px;" href="https://www.youtube.com/watch?v=AYV_HEcCVTo" data-lightbox="transitionIn:elastic;transitionOut:elastic; group:mygroup1;titlePosition:over;padding:0">
-            <div class="uk-overlay" style="border: 3px solid #7d2422;">
-                <img src="/wp-content/uploads/video/main_video.jpg"   width="200" height="140" alt="Load Style" >
-                <!-- <div class="uk-overlay-area" style="background: #7d2422"></div> -->
-            </div>
-            <div class="uk-thumbnail-caption" style="background: #7d2422; color:white;">Плаксы - Плаксы-Style!</div>
-        </a>
+    <a class="uk-overlay-toggle" data-lightbox="group:photos; transitionIn:elastic; transitionOut:elastic; titlePosition:over;padding:0" href="https://www.youtube.com/watch?v=AYV_HEcCVTo">
+                                <div style="border: 3px solid #7d2422;">
+                                    <div class="uk-overlay">
+                                        <img class="uk-thumbnail-single" src="/wp-content/uploads/video/main_video.jpg" alt="Load Style" title="Load Style" height="140" width="200" >
+                                        <div class="uk-overlay-area" ></div>
+                                    </div>
+                                    <div class="uk-thumbnail-caption" style="color:white;background: #7C2322 ">Плаксы - Плаксы-Style!</div>
+                                </div>
+    </a>
+
 
    <p style="width: 186px;">Клип на одну из самых узнаваемых песен.<br> Визитная карточка группы.</p>
 
