@@ -34,9 +34,9 @@
                     </div> -->
 
                 <div id="wrap" style="top:0px;z-index:9999;position:relative;">
-                    <a href="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" class="cloud-zoom" rel="position: 'inside' , showTitle: false, adjustX:-4, adjustY:-4" style="position: relative; display: block;">
-                        <img src="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" title="Текст заголовка" alt="" style="display: block; max-width:357px; border:3px solid #7d2422">
-                    </a>
+<!--                    <a href="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" class="cloud-zoom" rel="position: 'inside' , showTitle: false, adjustX:-4, adjustY:-4" style="position: relative; display: block;">-->
+                        <img src="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" alt="" style="display: block; max-width:357px; border:3px solid #7d2422">
+<!--                    </a>-->
 <!--                 <div class="mousetrap" style="background-image: url(http://ruseller.com/adds/adds2572/example/); z-index: 999; position: absolute; width: 240px; height: 320px; left: 0px; top: 0px; cursor: move;"></div></div>
  -->
 
