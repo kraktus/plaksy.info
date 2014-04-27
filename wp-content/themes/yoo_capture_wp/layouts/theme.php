@@ -11,7 +11,7 @@ include($this['path']->path('layouts:theme.config.php'));
 
 ?>
 <!DOCTYPE HTML>
-<html lang="<?php echo $this['config']->get('language'); ?>" dir="<?php echo $this['config']->get('direction'); ?>"  data-config='<?php echo $this['config']->get('body_config','{}'); ?>'>
+<html lang="<?php echo $this['config']->get('language'); ?>" dir="<?php echo $this['config']->get('direction'); ?>"  data-config='<?php echo $this['config']->get('body_config','{}'); ?>' style="min-width: 1005px;">
 
 <head>
 <?php echo $this['template']->render('head'); ?>

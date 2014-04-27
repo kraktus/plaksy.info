@@ -16,6 +16,9 @@ pattern
 
 /* Layout
  ========================================================================== */
+html{
+  min-width: 1005px!important;
+}
 
 body {
     -webkit-text-stroke: 1px transparent;
@@ -133,7 +136,7 @@ footer {
 
     background: @theme_global-light-background;
 
-    .uk-panel-box { background: @global-background; }
+    .uk-panel-box { background: @global-background;}
     .uk-panel-box-secondary { background: @theme_global-secondary-background; }
     .uk-panel-box-primary { background: @global-primary-background; }
     .tm-panel-clear-image {
@@ -147,6 +150,8 @@ footer {
 .uk-panel-box-front-up {
     padding-bottom:0px;
 }
+
+.uk-panel-box {min-width: 186px!important;}
 
 
 /* Slant
