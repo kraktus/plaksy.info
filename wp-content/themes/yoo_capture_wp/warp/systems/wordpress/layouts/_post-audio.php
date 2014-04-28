@@ -1,10 +1,24 @@
 
+<?php if (has_post_thumbnail()) : ?>
+    <?php
+    $width = get_option('thumbnail_size_w'); //get the width of the thumbnail setting
+    $height = get_option('thumbnail_size_h'); //get the height of the thumbnail setting
+    ?>
+    <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array($width, $height), array('class' => '')); ?></a>
+<?php endif; ?>
+<? /*Получаем данные о посте*/?>
+<? $post_info = get_post_custom();
+//     echo "<pre>";
+//     var_dump($post_info);
+//     echo "</pre>";
+?>
 
  <div class="uk-width-1-1 uk-width-medium-1-2">
-        <a href="<?php the_permalink() ?>"><img src="/wp-content/uploads/albums/playboy.jpg" width="200px" alt="DVD Case" /><img src="/wp-content/uploads/albums/dvd-playboy.png" width="200px;" alt="DVD Disc" /></a>
+        <a href="<?php the_permalink() ?>"><img src="<?=cut_link($post_info["wpcf-audio-image"][0]);?>" width="200px" alt="DVD Case" />
+        <img src="<?=cut_link($post_info["wpcf-cd-image"][0]);?>" width="200px;" alt="DVD Disc" /></a>
         <a href="<?php the_permalink() ?>">
         <p style="text-align:center; width: 200px;"><strong style="color: #7C2322"><?php the_title(); ?></strong></p>
-        <p style="text-align:center; width: 200px;"><strong style="color: #7C2322">Live'14</strong></p>
+        <p style="text-align:center; width: 200px;"><strong style="color: #7C2322"><?=$post_info["wpcf-audio-album-type"][0];?>'<?=date("y", $post_info["wpcf-audio-date"][0]);?></strong></p>
 
         </a><p style="text-align:center; width: 200px;">
         <?php edit_post_link(__('Edit this post.', 'warp'), '<p><i class="uk-icon-pencil"></i> ','</p>'); ?></p>
@@ -14,13 +28,6 @@
 
 <!-- <article id="item-<?php the_ID(); ?>" class="uk-article" data-permalink="<?php the_permalink(); ?>">
 
-    <?php if (has_post_thumbnail()) : ?>
-        <?php
-        $width = get_option('thumbnail_size_w'); //get the width of the thumbnail setting
-        $height = get_option('thumbnail_size_h'); //get the height of the thumbnail setting
-        ?>
-        <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array($width, $height), array('class' => '')); ?></a>
-    <?php endif; ?>
 
     <h1 class="uk-article-title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 
