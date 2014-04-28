@@ -69,6 +69,12 @@ function rdate($format, $timestamp, $case = 0)
 }
 
 
+/*Костыль для удаления абсолютной части линка */
+function cut_link($a)
+{   // внимание, ГОВНОКОД!!!
+    $url = preg_replace("!http://plaksy.local!","",$a);
+    return $url;
+}
 
 
 
