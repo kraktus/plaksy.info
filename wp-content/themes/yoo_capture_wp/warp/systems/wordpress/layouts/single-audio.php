@@ -13,9 +13,9 @@
 
         <? /*Получаем данные о посте*/?>
         <? $post_info = get_post_custom();
-             echo "<pre>";
-             var_dump($post_info);
-             echo "</pre>";
+//             echo "<pre>";
+//             var_dump($post_info);
+//             echo "</pre>";
         ?>
 
         <?
