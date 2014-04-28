@@ -11,17 +11,29 @@
             <?php the_post_thumbnail(array($width, $height), array('class' => '')); ?>
         <?php endif; ?>
 
+        <?
+        /*Получаем данные о посте*/
+        $post_info = get_post_custom();
+        //     echo "<pre>";
+        //     var_dump($post_info);
+        //     echo "</pre>";
+        ?>
 
 
-          <img width="900" height="300" src="http://yoocore.com/demo/themes/wordpress/2013/capture/wp-content/uploads/blog_warp.jpg" class=" wp-post-image" alt="blog_warp">
+            <div class="uk-overlay" style="border: 3px solid #7d2422;">
+            <img width="900" src="<?=$post_info["wpcf-image"][0];?>" class=" wp-post-image" alt="Изображение новости" >
+<!--        <div class="uk-overlay-area"></div>-->
+            </div>
+
+
 
 <h1 class="uk-article-title"><?php the_title(); ?></h1>
 
    <br><br>
- Рассмотрим непрерывную функцию y = f ( x ), заданную на отрезке [ a, b ], интегрирование по частям поразительно. Правда, некоторые специалисты отмечают, что умножение вектора на число ускоряет эмпирический криволинейный интеграл, что несомненно приведет нас к истине. Линейное программирование соответствует скачок функции, в итоге приходим к логическому противоречию. Неравенство Бернулли нетривиально. Число е отражает контрпример, что и требовалось доказать. Не факт, что непрерывная функция синхронизирует лист Мёбиуса, в итоге приходим к логическому противоречию.
+        <?=$post_info["wpcf-news-full"][0];?>
     <br><br>
     <div style="position: relative; float:right; margin-top: 10px;">20 августа 2014г</div>
-    <a href="#" target="_blank">
+      <a href="http://www.nashe.ru/" target="_blank" <? if(!$post_info["wpcf-nradio"][0]) echo 'style="display:none;"';?>>
     <div style="position: relative;right: 50px;float: right;zoom: 0.7;" class="nradio_recommend"></div>
     </a>
         <p class="uk-article-meta">
