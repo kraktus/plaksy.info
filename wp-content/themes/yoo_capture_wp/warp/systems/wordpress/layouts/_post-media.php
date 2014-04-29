@@ -8,13 +8,20 @@
         <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array($width, $height), array('class' => '')); ?></a>
     <?php endif; ?>
 
+    <? /*Получаем данные о посте*/?>
+    <? $post_info = get_post_custom();
+//         echo "<pre>";
+//         var_dump($post_info);
+//         echo "</pre>";
+    ?>
+
     <h1 class="uk-article-title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 
 
 
 
    <br>
-                <a href="">
+                <a href="http://www.nashe.ru/" target="_blank" <? if(!$post_info["wpcf-nradio"][0]) echo 'style="display:none;"';?>>
                     <div  class="nradio_recommend" style="position: relative;float: right;margin-top: -80px;"></div>
                 </a>
    <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
@@ -23,7 +30,7 @@
 			<td rowspan="3" style="width: 250px;">
                  <a class="uk-thumbnail uk-overlay-toggle" style="padding: 0px;" href="<?php the_permalink() ?>">
                     <div class="uk-overlay" style="border: 3px solid #7d2422;">
-                        <img src="http://www.foolsday.ru/wp-content/uploads/2014/03/4cUoGC_jR3c.jpg" style="max-height:473px;" alt="Load Style" >
+                        <img src="<?=cut_link($post_info["wpcf-prev_img_1"][0]);?>" style="max-height:473px;" alt="Load Style" >
                         <div class="uk-overlay-area"></div>
                     </div>
                  </a>
@@ -31,7 +38,7 @@
 			<td style="width: 5%">&nbsp;</td>
 			<td style="vertical-align: top; width: 169px;">
                 <hr>
-                Conversion rate синхронизирует потребительский рынок, отвоевывая рыночный сегмент. В рамках концепции Акоффа и Стэка, партисипативное планирование тормозит бюджет на размещение, полагаясь на инсайдерскую информацию.
+                <?=$post_info["wpcf-title_text"][0];?>
                    <br><hr>
 			</td>
 		</tr>
@@ -43,8 +50,8 @@
 			<td>&nbsp;</td>
 			<td style="text-align: right; vertical-align: bottom;">
                 <div style="zoom: 3; color: #7C2322">
-                    <div class="uk-icon-camera" style="float: left;"></div>
-                    <div class="uk-icon-play-circle" style="float: left; margin-left: 10px;"></div>
+                    <div class="uk-icon-camera" style="float: left; <?php if ($post_info["wpcf-isset_photo"][0] != 1)echo 'display:none';?>"></div>
+                    <div class="uk-icon-play-circle" style="float: left; <?php if ($post_info["wpcf-isset_video"][0] != 1)echo 'display:none;';?> margin-left: 10px;"></div>
                 </div>
                     <a class="uk-button uk-button-primary " href="<?php the_permalink() ?>">Подробнее</a>
 			</td>
