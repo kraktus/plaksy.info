@@ -7,18 +7,46 @@ Author: Руслан Жамалетдинов
 Author URI: vk.com/krakuts
 */
 
-function events_main_widget($args) {
+function events_main_widget($args)
+{
     extract($args, EXTR_SKIP);
     $options = get_option('events_main_widget');
-    $title = empty($options['title']) ? 'Events Main' : $options['title'];
-?>
-        <!-- <?php echo $before_widget; ?> -->
-        <!-- <?php echo $before_title . $title . $after_title; ?> -->
+    $title   = empty($options['title']) ? 'Events Main' : $options['title'];
+    ?>
+    <!-- <?php echo $before_widget; ?> -->
+    <!-- <?php echo $before_title . $title . $after_title; ?> -->
 
-        <table id="wigets" border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+
+    <?
+
+    $posts = get_posts(
+        array(
+            'posts_per_page' => 1,
+            'post_type'      => 'news',
+            'order'          => 'DESC',
+            'orderby'        => 'post_date'
+
+        )
+    );
+
+    $news                   = get_post_custom($posts[0]->ID);
+    $news['wpcf-title']     = $posts[0]->post_title;
+    //$news['wpcf-date']      = $posts[0]->post_date;
+    $news['wpcf-site-link'] = get_permalink($posts[0]->ID);
+
+//        echo "<pre>";
+//        var_dump($news);
+//        echo "</pre>";
+    ?>
+
+
+
+    <!--ВЫВОД ШАБЛОНА-->
+
+    <table id="wigets" border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
         <tbody>
             <tr>
-                <td><h2>Голосуй не голосуй...</h2></td>
+                <td><h2><?= $news['wpcf-title'] ?></h2></td>
                 <td>&nbsp;</td>
                     <td style="text-align: right;" title="По данным встречи в контакте" data-uk-tooltip="">
                                     <!-- <span class="uk-badge"><dfn style="border-bottom: 0px dotted; font-style: italic;"  title="">Участники</dfn></span>&nbsp; <span class="uk-badge uk-badge-notification"><dfn style="border-bottom: 0px dotted;" title="По данным встречи в контакте">57</dfn></span> -->
@@ -27,50 +55,48 @@ function events_main_widget($args) {
         </tbody>
         </table>
 
-<br>
-<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+    <br>
+    <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
     <tbody>
         <tr>
             <td colspan="2">
                 <p class="uk-article-lead" style="font-size: 17px;">
-                    Друзья! Голосуйте в новом чарте за Плаксы! <br>
-                    ЧАРТ 2014, неделя №10. ЗАКРЫТИЕ 23 МАРТА В 12:00 ПО МОСКВЕ!
-                    <br>
-                    <a href="http://vk.com/topic-10713353_29880736">http://vk.com/topic-10713353_29880736</a>
-                    <br>
-                    Плаксы - Стой +5!!!
-<!-- Нужно обязательно голосовать за 5 песен из чарта чтоб голос засчитался! Голосовать расставляя баллы +5, +4, +3, +2, +1 -->
+                   <?= $news['wpcf-news-anonce'][0] ?>
+                    <!-- Нужно обязательно голосовать за 5 песен из чарта чтоб голос засчитался! Голосовать расставляя баллы +5, +4, +3, +2, +1 -->
 <!-- Копировать голоса нельзя, повторять нельзя. -->
                 </p>
             </td>
         </tr>
     </tbody>
 </table>
-<hr>
+    <hr>
 
-<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+    <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
     <tbody>
         <tr>
             <td>
-                <a class="uk-button uk-button-primary" href="#">Подробнее</a>
+                <a class="uk-button uk-button-primary" href="<?= $news['wpcf-site-link'] ?>" target="_blank">Подробнее</a>
             </td>
             <td style="text-align: right;">
-                <a href="#" target="_blank">
+                <a href="http://www.nashe.ru/" target="_blank" <? if (!$news["wpcf-nradio"][0]) {
+                    echo 'style="display:none;"';
+                } ?>>
                 <div style="position: relative;right: 0px;float: right;zoom: 0.7;" class="nradio_recommend"></div>
                 </a>
             </td>
-            <td style="text-align: right; width: 140px;">20 августа 2014г.</td>
+            <td style="text-align: right; width: 140px;"><?=rdate( 'd F Y', $post_info["wpcf-date"][0], 1);?></td>
         </tr>
     </tbody>
 </table>
 
 
 
-        <?php echo $after_widget; ?>
+    <?php echo $after_widget; ?>
 <?php
 }
 
-function events_main_widget_control() {
+function events_main_widget_control()
+{
     /*$options = $newoptions = get_option('a2p_plugin_widget_meta');
     if ( $_POST["a2p_plugin_meta-submit"] ) {
         $newoptions['title'] = strip_tags(stripslashes($_POST["a2p_plugin_meta-title"]));
@@ -86,7 +112,8 @@ function events_main_widget_control() {
 <?php*/
 }
 
-function events_main_widget_init() {
+function events_main_widget_init()
+{
     register_sidebar_widget('Events_main', 'events_main_widget');
     register_widget_control('Events_main', 'events_main_widget_control', 300, 90);
 }
