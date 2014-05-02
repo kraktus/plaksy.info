@@ -146,15 +146,16 @@ function footer_links_widget($args)
 </div>
     <!--Копирайтик-->
 
-
-    <div style="opacity: 0.5">
+    <div class="crby">
+    <div>
     Разработка сайта 2014г.<br>
-    Копирайт © <?=date("Y")?>г. "Группа Плаксы"
+    Все права защищены. Копирайт © 2009-<?=date("Y")?>
     </div>
     <div style="float: right;position: inherit;margin-top: -40px;margin-right: 50px;">
-        <a href="http://www.vk.com/kraktus" target="_blank" class="crby">
+        <a href="http://www.vk.com/kraktus" target="_blank">
         <img src="/wp-content/plugins/footer_links/img/crby.png">
         </a>
+    </div>
     </div>
     <!-- </div> -->
 
