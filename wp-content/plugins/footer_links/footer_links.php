@@ -7,25 +7,26 @@ Author: Руслан Жамалетдинов
 Author URI: vk.com/krakuts
 */
 
-function footer_links_widget($args) {
+function footer_links_widget($args)
+{
     extract($args, EXTR_SKIP);
     $options = get_option('footer_links_widget');
-    $title = empty($options['title']) ? 'Footer links' : $options['title'];
-?>
-        <!-- <?php echo $before_widget; ?> -->
-        <!-- <?php echo $before_title . $title . $after_title; ?> -->
-<?
-// echo "ух мля ее перекосило всю";
-?>
+    $title   = empty($options['title']) ? 'Footer links' : $options['title'];
+    ?>
+    <!-- <?php echo $before_widget; ?> -->
+    <!-- <?php echo $before_title . $title . $after_title; ?> -->
+    <?
+    // echo "ух мля ее перекосило всю";
+    ?>
 
-<!-- <div class="uk-margin uk-vertical-align"></div>
-<div class="uk-grid uk-vertical-align-bottom">
- -->
+    <!-- <div class="uk-margin uk-vertical-align"></div>
+    <div class="uk-grid uk-vertical-align-bottom">
+     -->
 
-<div id="footer"></div>
-<div class="uk-margin uk-vertical-align" >
+    <div id="footer"></div>
+    <div class="uk-margin uk-vertical-align">
 
-<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 100%;" class="footer_links">
         <tbody>
                 <tr style="height:70px">
                         <td width="90px">
@@ -140,16 +141,30 @@ function footer_links_widget($args) {
                 </tr>
         </tbody>
 </table>
+<hr>
 
 </div>
-<!-- </div> -->
+    <!--Копирайтик-->
 
 
-        <?php echo $after_widget; ?>
+    <div style="opacity: 0.5">
+    Разработка сайта 2014г.<br>
+    Копирайт © <?=date("Y")?>г. "Группа Плаксы"
+    </div>
+    <div style="float: right;position: inherit;margin-top: -40px;margin-right: 50px;">
+        <a href="http://www.vk.com/kraktus" target="_blank" class="crby">
+        <img src="/wp-content/plugins/footer_links/img/crby.png">
+        </a>
+    </div>
+    <!-- </div> -->
+
+
+    <?php echo $after_widget; ?>
 <?php
 }
 
-function footer_links_widget_control() {
+function footer_links_widget_control()
+{
     /*$options = $newoptions = get_option('a2p_plugin_widget_meta');
     if ( $_POST["a2p_plugin_meta-submit"] ) {
         $newoptions['title'] = strip_tags(stripslashes($_POST["a2p_plugin_meta-title"]));
@@ -165,7 +180,8 @@ function footer_links_widget_control() {
 <?php*/
 }
 
-function footer_links_widget_init() {
+function footer_links_widget_init()
+{
     register_sidebar_widget('footer_links', 'footer_links_widget');
     register_widget_control('footer_links', 'footer_links_widget_control', 300, 90);
 }
