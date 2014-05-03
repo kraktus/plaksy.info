@@ -84,7 +84,7 @@ function events_main_widget($args)
                 <div style="position: relative;right: 0px;float: right;zoom: 0.7;" class="nradio_recommend"></div>
                 </a>
             </td>
-            <td style="text-align: right; width: 140px;"><?=rdate( 'd F Y', $post_info["wpcf-date"][0], 1);?></td>
+            <td style="text-align: right; width: 140px;"><?=rdate( 'd F Y', $post_info["wpcf-date"][0], 1);?> г.</td>
         </tr>
     </tbody>
 </table>
