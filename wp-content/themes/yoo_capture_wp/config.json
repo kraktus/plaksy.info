@@ -4,6 +4,8 @@
 	"responsive": "0",
 	"multicolumns": "1",
 	"multicolumns_order": "1",
+	"totop_scroller": "0",
+	"warp_branding": "0",
 	"panel_default": {
 		"top-a": {
 			"panel": "uk-panel uk-panel-box"
@@ -1343,109 +1345,6 @@
 			},
 			"class": "",
 			"panel": "",
-			"icon": "",
-			"badge": {
-				"type": "uk-panel-badge uk-badge",
-				"text": ""
-			},
-			"display": {
-				"large": "1",
-				"medium": "1",
-				"small": "1"
-			}
-		},
-		"archives-3": {
-			"title": "1",
-			"assignment": {
-				"0": "",
-				"1": "archive",
-				"2": "single",
-				"3": "cat-8"
-			},
-			"class": "",
-			"panel": "uk-panel uk-panel-box uk-panel-box-secondary",
-			"icon": "",
-			"badge": {
-				"type": "uk-panel-badge uk-badge",
-				"text": ""
-			},
-			"display": {
-				"large": "1",
-				"medium": "1",
-				"small": "1"
-			}
-		},
-		"tag_cloud-3": {
-			"title": "1",
-			"assignment": {
-				"0": "",
-				"1": "archive",
-				"2": "single",
-				"3": "cat-8"
-			},
-			"class": "",
-			"panel": "",
-			"icon": "",
-			"badge": {
-				"type": "uk-panel-badge uk-badge",
-				"text": ""
-			},
-			"display": {
-				"large": "1",
-				"medium": "1",
-				"small": "1"
-			}
-		},
-		"links-3": {
-			"title": "1",
-			"assignment": {
-				"0": "",
-				"1": "archive",
-				"2": "single",
-				"3": "cat-8"
-			},
-			"class": "",
-			"panel": "",
-			"icon": "",
-			"badge": {
-				"type": "uk-panel-badge uk-badge",
-				"text": ""
-			},
-			"display": {
-				"large": "1",
-				"medium": "1",
-				"small": "1"
-			}
-		},
-		"recent-comments-3": {
-			"title": "1",
-			"assignment": {
-				"0": "",
-				"1": "archive"
-			},
-			"class": "",
-			"panel": "",
-			"icon": "",
-			"badge": {
-				"type": "uk-panel-badge uk-badge",
-				"text": ""
-			},
-			"display": {
-				"large": "1",
-				"medium": "1",
-				"small": "1"
-			}
-		},
-		"nav_menu-2": {
-			"title": "1",
-			"assignment": {
-				"0": "",
-				"1": "archive",
-				"2": "single",
-				"3": "cat-8"
-			},
-			"class": "",
-			"panel": "uk-panel uk-panel-box uk-panel-box-primary",
 			"icon": "",
 			"badge": {
 				"type": "uk-panel-badge uk-badge",

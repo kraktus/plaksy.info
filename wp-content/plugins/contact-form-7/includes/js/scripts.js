@@ -1,3 +1,7 @@
+/*Закрываем насильно popup_submit*/
+
+
+
 (function($) {
 
 	if (typeof _wpcf7 == 'undefined' || _wpcf7 === null)
@@ -128,7 +132,7 @@
 		$(data.into).trigger('submit.wpcf7');
 
 		if (1 == data.mailSent)
-			$form.resetForm().clearForm();
+			$form.resetForm();
 
 		$form.find('[placeholder].placeheld').each(function(i, n) {
 			$(n).val($(n).attr('placeholder'));
@@ -136,6 +140,8 @@
 
 		$responseOutput.append(data.message).slideDown('fast');
 		$responseOutput.attr('role', 'alert');
+
+		$.wpcf7UpdateScreenReaderResponse($form, data);
 	}
 
 	$.fn.wpcf7ExclusiveCheckbox = function() {
@@ -305,6 +311,33 @@
 			$(this).find('img.ajax-loader').css({ visibility: 'hidden' });
 		});
 	};
+
+	$.wpcf7UpdateScreenReaderResponse = function($form, data) {
+		$('.wpcf7 .screen-reader-response').html('').attr('role', '');
+
+		if (data.message) {
+			var $response = $form.siblings('.screen-reader-response').first();
+			$response.append(data.message);
+
+			if (data.invalids) {
+				var $invalids = $('<ul></ul>');
+
+				$.each(data.invalids, function(i, n) {
+					if (n.idref) {
+						var $li = $('<li></li>').append($('<a></a>').attr('href', '#' + n.idref).append(n.message));
+					} else {
+						var $li = $('<li></li>').append(n.message);
+					}
+
+					$invalids.append($li);
+				});
+
+				$response.append($invalids);
+			}
+
+			$response.attr('role', 'alert').focus();
+		}
+	}
 
 	$.wpcf7SupportHtml5 = function() {
 		var features = {};

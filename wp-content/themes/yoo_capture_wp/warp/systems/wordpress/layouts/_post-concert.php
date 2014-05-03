@@ -8,6 +8,23 @@
         <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array($width, $height), array('class' => '')); ?></a>
     <?php endif; ?>
 
+   <?
+    /*Получаем данные о посте*/
+    $post_info = get_post_custom();
+/*     echo "<pre>";
+     var_dump($post_info);
+     echo "</pre>";*/
+    ?>
+    <!--Определяем город-->
+    <?if($post_info["wpcf-city"][0] == 1)//Если город выбран правильно, то это Мск
+        $post_info["wpcf-city"][0] = 'г. Москва';
+    else
+        $post_info["wpcf-city"][0] =  $post_info["wpcf-another_city"][0];
+    ?>
+
+
+<!--ВЫВОД ШАБЛОНА-->
+
     <!-- <h1 class="uk-article-title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1> -->
 
 <br>
@@ -17,7 +34,7 @@
             <td rowspan="3" style="vertical-align: top;">
                 <a class="uk-thumbnail uk-overlay-toggle" style="padding: 0px;" href="<?php the_permalink() ?>">
                     <div class="uk-overlay" style="border: 3px solid #7d2422;">
-                        <img src="http://cs424828.vk.me/v424828460/969d/KSH_KJSi53o.jpg" style="max-height:473px;" alt="Load Style" >
+                        <img src="<?=cut_link($post_info["wpcf-afisha"][0]);?>" style="max-height:473px;" alt="Load Style" >
                         <div class="uk-overlay-area"></div>
                     </div>
                 </a>
@@ -34,16 +51,16 @@
         </tr>
         <tr>
             <td style="text-align: right; vertical-align: bottom;">
-                <a href="#" target="_blank">
+                <a href="http://www.nashe.ru/" target="_blank" <? if(!$post_info["wpcf-nradio"][0]) echo 'style="display:none;"';?>>
                 <div style="margin-left: 234px;" class="nradio_recommend"></div>
                 </a>
                 <br>
                 <br>
                 <br>
-                <h5 style="text-align: right;" class="uk-article-lead">01 Апреля 2014</h5>
-                <h5 style="text-align: right;" class="uk-article-lead">&nbsp; 20:00</h5>
-                <h5 style="text-align: right;" class="uk-article-lead">г. Москва</h5>
-                <h5 style="text-align: right;" class="uk-article-lead">Клуб&nbsp;Grand Bourbon Street</h5>
+                <h5 style="text-align: right;" class="uk-article-lead"><?=rdate( 'd F Y', $post_info["wpcf-date"][0], 1);?></h5>
+                <h5 style="text-align: right;" class="uk-article-lead">&nbsp; <?=date("H:i", $post_info["wpcf-date"][0]);?></h5>
+                <h5 style="text-align: right;" class="uk-article-lead"><?=$post_info["wpcf-city"][0];?></h5>
+                <h5 style="text-align: right;" class="uk-article-lead"><?=$post_info["wpcf-club"][0];?></h5>
                 <br>
             </td>
         </tr>
@@ -51,7 +68,7 @@
             <td style="text-align: right; vertical-align: bottom; height: 42px;">
                     <a class="uk-button uk-button-primary " href="<?php the_permalink() ?>">Подробнее</a>
                     &nbsp;
-                    <a class="uk-button vk" href="#" target="_blank">Встреча в контакте</a>
+                    <a class="uk-button vk" href="<?=$post_info["wpcf-vk"][0];?>" target="_blank">Встреча в контакте</a>
             </td>
         </tr>
     </tbody>

@@ -80,14 +80,6 @@ for ($i = 0; $i < $all_artist_number; $i++)
 
 <?
 
-function cut($a)
-{   // внимание, ГОВНОКОД!!!
-    //нужно для удаления начала линка картинки
-    //т.к. по умолчанию у них абсолютные пути
-    $url = preg_replace("!http://plaksy.local!","",$a);
-    return $url;
-}
-
 
 // echo "<pre>";
 // var_dump($artist);
@@ -105,13 +97,13 @@ function cut($a)
 
 
                         <?php for($i = 0; $i < $all_artist_number; $i++) : ?>
-                                <?php if( $i%$settings['items_per_set']  == 0): //если кратно кол-ву чуваков за раз  ?>
+                                <?php if( $i%$settings['items_per_set']  == 0): //если остаток от деления 0  ?>
                                 <ul class="set">
                                 <?php endif; ?>
 
                                         <li>
                                                 <article class="wk-content">
-                                                <img src="<?=cut($artist[$i]['PHOTO'][0]);?>" alt="<?=(string)$artist[$i]['NAME'][0]?>" height="200" width="200">
+                                                <img src="<?=cut_link($artist[$i]['PHOTO'][0]);?>" alt="<?=(string)$artist[$i]['NAME'][0]?>" height="200" width="200">
                                                 <div class="overlay team_plaksy">
                                                 <div>
                                                         <div class="uk-height-1-1 uk-vertical-align">
@@ -133,7 +125,7 @@ function cut($a)
 
                                         </li>
 
-                                <?php if( $i%$settings['items_per_set'] == 0 && $i%$settings['items_per_set'] != 0): //если кратно кол-ву чуваков за раз?>
+                                <?php if( $i%$settings['items_per_set'] == ($settings['items_per_set']-1)): //если остаток от деления = максимальный элемент (минус 1, т.к. считаеть надо от нуля)?>
                                 </ul>
                                 <?php endif; ?>
                         <? endfor; ?>

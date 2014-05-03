@@ -141,7 +141,7 @@ $this['asset']->addFile('js', 'js:theme.js');
 $this['asset']->addFile('js', 'js:parallax.js');
 $this['asset']->addFile('js', 'js:cloud-zoom.1.0.2.js');//cloud-zoom
 $this['asset']->addFile('js', 'js:cloud-zoom.1.0.2.min.js');//cloud-zoom
-
+$this['asset']->addFile('js', 'js:iframe_border.js');//iframe_border.js для single-media
 // internet explorer
 if ($this['useragent']->browser() == 'msie') {
 	$head[] = sprintf('<!--[if IE 8]><link rel="stylesheet" href="%s"><![endif]-->', $this['path']->url('css:ie8.css'));
