@@ -97,7 +97,7 @@ for ($i = 0; $i < $all_artist_number; $i++)
 
 
                         <?php for($i = 0; $i < $all_artist_number; $i++) : ?>
-                                <?php if( $i%$settings['items_per_set']  == 0): //если кратно кол-ву чуваков за раз  ?>
+                                <?php if( $i%$settings['items_per_set']  == 0): //если остаток от деления 0  ?>
                                 <ul class="set">
                                 <?php endif; ?>
 
@@ -125,7 +125,7 @@ for ($i = 0; $i < $all_artist_number; $i++)
 
                                         </li>
 
-                                <?php if( $i%$settings['items_per_set'] == 0 && $i%$settings['items_per_set'] != 0): //если кратно кол-ву чуваков за раз?>
+                                <?php if( $i%$settings['items_per_set'] == ($settings['items_per_set']-1)): //если остаток от деления = максимальный элемент (минус 1, т.к. считаеть надо от нуля)?>
                                 </ul>
                                 <?php endif; ?>
                         <? endfor; ?>
