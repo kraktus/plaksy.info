@@ -70,11 +70,18 @@ function gig_main_widget($args)
     //echo '</pre>';
 
 
+
+    /*Добавляем скрипт xd_connection*/
+/*    wp_register_script( 'vk_connection_js', plugins_url( 'http://vkontakte.ru/js/api/xd_connection.js?2', __FILE__ ), array('jquery'),'1.1', true );
+    wp_enqueue_script(  'vk_connection_js');*/
+
+    /*Добавляем скрипт узнающий кол-во участников концерта*/
+     wp_register_script( 'vk_members_js', plugins_url( '/js/vk_members.js', __FILE__ ), array('jquery'),'1.1', true );
+     wp_enqueue_script(  'vk_members_js');
     ?>
 
     <!-- <?php echo $before_widget; ?> -->
     <!-- <?php echo $before_title . $title . $after_title; ?> -->
-
 
     <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
         <tbody>
@@ -92,7 +99,6 @@ function gig_main_widget($args)
         </table>
 
     <hr style="margin-top: -3px;">
-
     <table border="0" cellpadding="1" cellspacing="1" style="width: 100%; margin-top: -30px;">
     <tbody>
         <tr>
@@ -100,7 +106,7 @@ function gig_main_widget($args)
                 <p class="uk-article-lead" style="font-size: 20px;"><?= $next_concert["wpcf-city"][0] ?></p>
             </td>
             <td style="text-align: right;">
-                <p class="uk-article-lead" style="font-size: 20px;"><?= rdate('d F Y', $next_concert["wpcf-date"][0], 1); ?></p>
+                <p class="uk-article-lead" style="font-size: 20px;"><?= rdate('d F Y', $next_concert["wpcf-date"][0], 1); ?> г.</p>
             </td>
         </tr>
         <tr>
@@ -139,10 +145,10 @@ function gig_main_widget($args)
                 <td>
                    <blockquote>
                         <p><?= $prev_concert["wpcf-club"][0] ?></p>
-                        <small><?= rdate('d F', $prev_concert["wpcf-date"][0], 1); ?></small>
+                        <small><?= rdate('d F Y', $prev_concert["wpcf-date"][0], 1); ?> г.</small>
                     </blockquote>
                 </td>
-                <? if ($prev_concert["wpcf-media"][0] == 2): ?>
+       <? if ($prev_concert["wpcf-media"][0] == 2): ?>
                     <td style="text-align: right; width: 85px;">
                         <a class="uk-button uk-button-primary" style="margin-bottom: 14px;" href="<?= $prev_concert["wpcf-url_media"][0] ?>" target="_blank">Отчет</a>
                     </td>
